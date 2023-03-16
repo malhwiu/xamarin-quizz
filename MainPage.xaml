@@ -6,24 +6,36 @@
         <!-- Add any other page content here -->
         <Label x:Name="kys"
             Text=""
+               FontSize="24"
+               HorizontalTextAlignment="Center"
+               Margin="20"
         />
         <Button x:Name="vas1"
             Text=""
             Clicked="vastaus1"
             WidthRequest="300"
+                Margin="10"
+                FontSize="18"
         />
         <Button x:Name="vas2"
             Text=""
             WidthRequest="300"
             Clicked="vastaus2"
+                Margin="10"
+                FontSize="18"
         />
         <Button x:Name="vas3"
             Text=""
             WidthRequest="300"
             Clicked="vastaus3"
+                Margin="10"
+                FontSize="18"
         />
         <Label x:Name="jotain"
             Text=""
+               HorizontalTextAlignment="Center"
+               Margin="20"
+               FontSize="24"
         />
         <Label x:Name="kysNro"
             Text=""

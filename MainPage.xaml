@@ -4,10 +4,6 @@
              x:Class="xamarin_tietovisa5.MainPage">
     <StackLayout>
         <!-- Add any other page content here -->
-        <Button x:Name="next"
-            Text="Aloita"
-            Clicked="nextButton"
-        />
         <Label x:Name="kys"
             Text=""
         />

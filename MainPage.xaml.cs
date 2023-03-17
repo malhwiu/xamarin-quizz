@@ -1,4 +1,9 @@
-﻿namespace xamarin_tietovisa5
+﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Core.Views;
+using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Core;
+
+namespace xamarin_tietovisa5
 {
     public partial class MainPage : ContentPage
     {
@@ -15,6 +20,19 @@
         }
 
         private readonly string DatabaseFilename = "tietovisa.db";
+        
+        async private void ShowToast(string msg)
+        {
+            CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+
+            string text = msg;
+            ToastDuration duration = ToastDuration.Short;
+            double fontSize = 14;
+
+            var toast = Toast.Make(text, duration, fontSize);
+
+            await toast.Show(cancellationTokenSource.Token);
+        }
 
         private void NextQuestion()
         {
@@ -37,8 +55,10 @@
 
         void nextKys()
         {
+            string msg = vastaus == oikeaVastaus ? "Oikein" : "Väärin";
+            jotain.Text = msg;
+            ShowToast(msg);
 
-            jotain.Text = vastaus == oikeaVastaus ? "Oikein" : "Väärin";
 
             NextQuestion();
         }

@@ -31,12 +31,6 @@
                 Margin="10"
                 FontSize="18"
         />
-        <Label x:Name="jotain"
-            Text=""
-               HorizontalTextAlignment="Center"
-               Margin="20"
-               FontSize="24"
-        />
         <Label x:Name="kysNro"
             Text=""
         />

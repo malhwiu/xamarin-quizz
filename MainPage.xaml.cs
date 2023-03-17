@@ -56,7 +56,7 @@ namespace xamarin_tietovisa5
         void nextKys()
         {
             string msg = vastaus == oikeaVastaus ? "Oikein" : "Väärin";
-            jotain.Text = msg;
+            //jotain.Text = msg;
             ShowToast(msg);
 
 

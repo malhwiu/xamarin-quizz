@@ -13,7 +13,7 @@ namespace xamarin_tietovisa5.database
         private readonly string dbResource;
         private const string
         selectQuery =
-$"SELECT {question}, {firstAns}, {secondAns}, {thirdAns}, {rightAns} FROM tbl_aineisto1";
+$"SELECT {question}, {firstAns}, {secondAns}, {thirdAns}, {rightAns} FROM tbl_aineisto1 ORDER BY RANDOM()";
 
         private const string firstAns = "vastaus1",
                              secondAns = "vastaus2",
